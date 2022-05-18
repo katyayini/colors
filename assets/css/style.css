@@ -1,0 +1,154 @@
+/*Declaring variables*/
+:root{
+    --darkpink:#C70039 ;
+    --light: #DAF7A6;
+    --whitecolor: #fff;
+    --lightpink: #EA98AF;
+    }
+/*Universal selector*/
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Element and class selectors*/
+
+    body{
+        display:flex;
+        flex-direction:column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main{
+        background-color: var(--light);
+    }
+
+
+    header{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2.5rem;
+        text-align: left;
+        background-color: var(--darkpink);
+        color: var(--light);
+        
+    }
+
+   
+    nav{
+        display: flex;
+        color: var(--whitecolor);
+        justify-content: flex-end;
+        font-weight: bold;
+        text-decoration:none;
+                      
+    }
+
+  
+   main>section{
+       display: flex;
+       flex-direction:coloumn;
+       justify-content: flex-start;
+       width:100%;
+    }    
+
+    h2{  
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    width:400px;
+    height:400px;
+}
+
+    .menu{
+    display:flex;
+    flex:0 0 300px;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+  
+    }
+    
+    li
+    {
+        list-style: none;
+        font-size: 16px;
+           
+    }
+
+    nav li a {
+        color: var(--light);
+        text-decoration:none;
+    }
+
+    .contactinfo{
+      display:flex;
+    }
+    .contact{
+      display:flex;
+    }
+
+    .p1{
+        display:flex;
+        padding:10px;
+        margin:10px;
+        align-items:stretch;
+         
+    }
+
+   .p1 p{
+       padding:10px;
+    text-indent:20px; 
+    }
+
+    .work1{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding:40px;
+    }
+    
+    .card {
+        border-color: var(--lightpink);
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px;
+        float: left;
+        width: 25%;
+      }
+      
+      .card img {
+        width: 100%;
+      }
+      
+      .card header {
+        padding: 20px;
+      }
+      
+      .card p {
+            position: relative;
+            bottom: 100px;
+            left: 40px;
+            color:var(--darkpink)
+          }
+      
+          .first-card{
+              flex: 4 0 100%;
+           }
+      
+/*Media quesries*/
+
+           @media screen and (max-width: 768px) {
+             main{
+              background-color: var(--whitecolor);
+
+            }                 
+            
+        }
+          
+           @media screen and (max-width: 992px) {
+            main{
+                background-color: #ffffe5;
+  
+              }         
+            }
